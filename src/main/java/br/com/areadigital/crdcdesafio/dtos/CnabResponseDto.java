@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import br.com.areadigital.crdcdesafio.entities.CnabDat;
-import br.com.areadigital.crdcdesafio.entities.TransactionRecord;
+import br.com.areadigital.crdcdesafio.models.TransactionRecord;
 import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

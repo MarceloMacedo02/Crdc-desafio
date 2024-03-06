@@ -1,4 +1,4 @@
-package br.com.areadigital.crdcdesafio.entities;
+package br.com.areadigital.crdcdesafio.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,4 +1,4 @@
-package br.com.areadigital.crdcdesafio.entities;
+package br.com.areadigital.crdcdesafio.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -13,4 +13,5 @@ public class HeaderRecord {
     private String recordType;
     private String companyName;
     private String companyId;
+    private String resever;
 }
