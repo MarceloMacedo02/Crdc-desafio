@@ -2,8 +2,9 @@
 
 # Back-end Java Spring Boot com Banco de Dados MongoDB
 
-Este é um guia completo para configurar e utilizar o back-end Java Spring Boot 
+- Este é um guia completo para configurar e utilizar o back-end Java Spring Boot 
 para realizar o upload de arquivos CNAB, validar sua estrutura e formatação, autorizar transações e cadastrar detalhes das transações em arquivos CNABs. O objetivo é integrar informações financeiras com precisão e eficiência, além de garantir um registro detalhado das transações autorizadas.
+- O sistema é capaz de receber arquivos CNAB seguindo o formato posicional especificado e validar sua estrutura conforme o layout definido. Ele verifica se o arquivo é válido, não está vazio e não está corrompido antes de processá-lo. O sistema também é capaz de identificar os diferentes tipos de registros presentes no arquivo e registrar as transações no banco de dados. Além disso, ele valida as transações de acordo com as regras estabelecidas, autorizando as transações válidas e rejeitando as inválidas. Em caso de problemas, o sistema fornece mensagens de erro apropriadas. Através da API de upload, o sistema recebe e processa os arquivos CNAB, garantindo a integridade e a formatação correta. Os usuários podem consultar as transações autorizadas, e a interface de usuário intuitiva fornece feedback adequado durante todo o processo.
 
 ## Tecnologias Utilizadas
 
