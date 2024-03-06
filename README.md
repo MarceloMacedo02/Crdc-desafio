@@ -187,6 +187,25 @@ Importe o projeto em sua IDE (por exemplo, IntelliJ ou Eclipse).
 	]
 }
 ```
+## Testes Unitários
+Testes Unitários com Mockito e JUnit 5
+Descrição da Aplicação
+A aplicação utiliza testes unitários para garantir a qualidade do código e verificar se as partes individuais do software estão funcionando corretamente.
+
+### Benefícios dos Testes Unitários
+- Detecção precoce de bugs.
+- Melhoria da qualidade do código.
+- Facilita a refatoração.
+- Documentação viva do código.
+### Mockito e JUnit 5
+O Mockito é uma biblioteca de mocking amplamente utilizada em conjunto com o framework de testes JUnit 5. O Mockito permite criar objetos simulados (mocks) de dependências externas, permitindo que os testes sejam executados de forma isolada.
+
+### Principais benefícios do uso do Mockito e JUnit 5:
+
+- Isolamento de dependências.
+- Controle total sobre o comportamento dos mocks.
+- Facilidade de uso.
+
 ### Coleta de méticas
 ```file
 # Habilitar os endpoints do Actuator
