@@ -3,21 +3,31 @@ package br.com.areadigital.crdcdesafio.configurations;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import springfox.documentation.builders.PathSelectors;
-import springfox.documentation.builders.RequestHandlerSelectors;
-import springfox.documentation.spi.DocumentationType;
-import springfox.documentation.spring.web.plugins.Docket;
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
+import io.swagger.v3.oas.models.OpenAPI;
+import io.swagger.v3.oas.models.info.Contact;
+import io.swagger.v3.oas.models.info.Info;
+import io.swagger.v3.oas.models.info.License;
 
 @Configuration
-@EnableSwagger2
 public class SwaggerConfig {
-    @Bean
-    public Docket api() {
-        return new Docket(DocumentationType.SWAGGER_2)
-                .select()
-                .apis(RequestHandlerSelectors.any())
-                .paths(PathSelectors.any())
-                .build();
-    }
+
+
+	@Bean
+	public OpenAPI myOpenAPI() {
+ 
+
+		Contact contact = new Contact();
+		contact.setEmail("marcelo_macedo01@hotmail.com");
+		contact.setName("CNAB");
+		contact.setUrl("https://www.exemplosite.com");
+
+		License mitLicense = new License().name("MIT License").url("https://choosealicense.com/licenses/mit/");
+
+		Info info = new Info().title("Back-end Java Spring Boot ").version("1.0").contact(contact)
+				.description("Utilizar o back-end Java Spring Boot \n"
+						+ "para realizar o upload de arquivos CNAB")
+				.termsOfService("https://www.siteteste/terms").license(mitLicense);
+
+		return new OpenAPI().info(info);
+	}
 }

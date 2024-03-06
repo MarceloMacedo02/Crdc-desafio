@@ -1,8 +1,9 @@
 
 
-# Back-end Java Spring Boot com Banco de Memória H2
+# Back-end Java Spring Boot com Banco de Dados MongoDB
 
-Este é um guia completo para configurar e utilizar o back-end Java Spring Boot com banco de memória H2 para realizar o upload de arquivos CNAB, validar sua estrutura e formatação, autorizar transações e cadastrar detalhes das transações em arquivos CNABs. O objetivo é integrar informações financeiras com precisão e eficiência, além de garantir um registro detalhado das transações autorizadas.
+Este é um guia completo para configurar e utilizar o back-end Java Spring Boot 
+para realizar o upload de arquivos CNAB, validar sua estrutura e formatação, autorizar transações e cadastrar detalhes das transações em arquivos CNABs. O objetivo é integrar informações financeiras com precisão e eficiência, além de garantir um registro detalhado das transações autorizadas.
 
 ## Tecnologias Utilizadas
 
@@ -196,6 +197,17 @@ management.endpoint.prometheus.enabled=true
 Essas configurações habilitam endpoints específicos do Actuator para expor métricas e dados no formato Prometheus, facilitando o monitoramento e a coleta de métricas em sistemas distribuídos.
 
 http://localhost:8080/actuator/prometheus
-# Contribuição
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests para melhorar este projeto.
 
+## Documentação
+Para visualizar a documentação da API, acesse http://localhost:8080/swagger-ui/index.html após iniciar a aplicação.
+# Contribuição
+1. Faça um fork do repositório.
+2. Crie uma nova branch com o nome descritivo da sua contribuição.
+3. Realize as alterações e melhorias necessárias.
+4. Faça um pull request com uma descrição clara das alterações realizadas.
+
+## Contato
+
+Em caso de dúvidas ou sugestões, sinta-se à vontade para entrar em contato através do e-mail marcelo_macedo01@hotmail.com.
+
+Esperamos que este aplicativo seja útil para o gerenciamento eficiente dos associados e atividades financeiras do seu Centro Espírita. Obrigado por utilizar esta aplicação!
